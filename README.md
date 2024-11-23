@@ -1,6 +1,5 @@
-site para criação de logos
-https://app.logomaster.ai/pt/create
-logomaster.ai
+Site criado para publicação de vagas de empregos e cursos. 
+
 
 logo criado no site designevo
 https://www.designevo.com/pt/apps/logo/?name=gray-and-black-tie

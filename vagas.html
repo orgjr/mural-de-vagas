@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="Assets/images/logo/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/vagas.css" />
+    <title>Criar Vagas</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--/BOOTSTRAP -->
+  </head>
+  <body>
+    <div id="header">
+      <button id="home" onclick="home()" type="button" class="btn btn-success">
+        Home
+      </button>
+    </div>
+
+    <div class="formulario-box">
+      <div id="mural-icon">
+        <a href="#">
+          <img
+            class="thumbnails"
+            src="/Assets/images/logo/12.png"
+            alt="MuralDeVagas"
+            onclick="home()"
+          />
+        </a>
+      </div>
+
+      <form
+        class="formulario"
+        method="post"
+        action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"
+        enctype="multipart/form-data"
+      >
+        <label class="titulo" for="titulo">Título</label><br />
+        <input
+          type="text"
+          id="titulo"
+          class="inputTitulo"
+          maxlength="40"
+          placeholder="Máximo 40 caracteres"
+        /><br />
+
+        <label class="descricao" for="descricao">Descrição</label><br />
+        <textarea
+          type="text"
+          id="descricao"
+          class="inputDescricao"
+          maxlength="3000"
+          placeholder="Máximo 3000 caracteres"
+        ></textarea
+        ><br />
+
+        <input
+          type="file"
+          id="imagem"
+          name="imagem"
+          accept="image/*"
+          class="adcImagem"
+          label="Imagem"
+        /><br />
+
+        <button
+          id="criarAnuncio"
+          onclick="enviar()"
+          type="button"
+          class="btn btn-success"
+        >
+          Enviar
+        </button>
+      </form>
+    </div>
+
+    <div id="creditos">
+      Logótipo feito com
+      <a
+        href="https://www.designevo.com/pt/"
+        title="Criador de Logótipos Online Grátis"
+        >DesignEvo</a
+      >
+    </div>
+
+    <script type="text/javascript" src="/Assets/js/home.js"></script>
+    <script type="text/javascript" src="/Assets/js/send.js"></script>
+    <!--/BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!--/BOOTSTRAP -->
+  </body>
+</html>

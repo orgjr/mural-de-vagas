@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/Assets/images/logo/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Emprego</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="top">
+        <form
+          id="pesquisaForm"
+          class="d-flex"
+          role="search"
+          onsubmit="pesquisarAnuncios(event)"
+        >
+          <div class="input-container">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Pesquisar anúncios..."
+              aria-label="Pesquisar"
+              id="termoPesquisa"
+            />
+            <button type="submit" class="icon-button">
+              <img
+                src="/Assets/images/icons/magnifying-glass.png"
+                alt="Ícone de lupa"
+                class="magnifying-icon"
+              />
+            </button>
+          </div>
+        </form>
+        <button
+          id="criarAnuncio"
+          onclick="criarAnuncio()"
+          type="button"
+          class="btn btn-success"
+        >
+          Criar Anúncio
+        </button>
+      </div>
+
+      <div id="Mural">
+        <a href="#">
+          <img
+            class="thumbnails"
+            src="/Assets/images/logo/12.png"
+            alt="MuralDeVagas"
+            onclick="home()"
+          />
+        </a>
+      </div>
+
+      <div id="boxFirst">
+        <!-- Aqui são exibidos os anúncios -->
+      </div>
+
+      <div id="creditos">
+        Logótipo feito com
+        <a
+          href="https://www.designevo.com/pt/"
+          title="Criador de Logótipos Online Grátis"
+          >DesignEvo</a
+        >
+      </div>
+
+      <script type="text/javascript" src="/Assets/js/scroll.js"></script>
+      <script type="text/javascript" src="/Assets/js/home.js"></script>
+      <script type="text/javascript" src="/Assets/js/createAd.js"></script>
+      <script type="text/javascript" src="/Assets/js/showAd.js"></script>
+      <script type="text/javascript" src="/Assets/js/send.js"></script>
+      <script type="text/javascript" src="/Assets/js/search.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </body>
+</html>

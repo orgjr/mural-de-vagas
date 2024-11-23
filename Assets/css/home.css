@@ -1,0 +1,152 @@
+body {
+  background-size: 100% 100%;
+}
+
+h2 {
+  font-size: 200px;
+  text-align: center;
+  font-family: "Calibri", sans-serif;
+}
+
+#main {
+  background-color: #fff;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#top {
+  background-color: #0c185edc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(2vh + 55px);
+  position: fixed; /* Faz o topo permanecer fixo na tela */
+  transition: transform 0.3s ease-in-out; /* Transição para movimento suave */
+  overflow: hidden;
+}
+
+#pesquisaForm {
+  display: flex;
+  margin-right: auto;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  margin-bottom: 2vh;
+  box-sizing: border-box;
+  height: 35px;
+  width: 400px;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+#termoPesquisa {
+  border: 1px solid #198754;
+  font-size: 16px;
+}
+
+/* BOTAO DO ÍCONE */
+
+.magnifying-icon {
+  width: 20px; /* Ajuste o tamanho do ícone */
+  height: 20px;
+  object-fit: contain;
+}
+
+.icon-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-button:hover .magnifying-icon {
+  opacity: 0.8; /* Efeito ao passar o mouse */
+}
+
+#criarAnuncio {
+  display: flex;
+  margin: 2vh;
+  padding: 4px;
+  height: 35px;
+  width: 150px;
+  justify-content: center;
+}
+
+#Mural {
+  flex: 1; /* Faz o mural ocupar todo o espaço restante */
+  margin: 8vh; /* Espaçamento para separar do topo fixo */
+  margin-top: 10vh; /* Ajusta o espaço para o tamanho de #top */
+  overflow-y: auto; /* Ativa o scroll vertical */
+  padding: 1vh; /* Opcional: espaço interno */
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+}
+
+#boxFirst {
+  width: 70%;
+  min-height: 100vh;
+  display: flex;
+  margin-bottom: 8vh;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.anuncio {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 1.4%;
+  padding: 1.4%;
+  min-height: 60vh;
+  max-height: 60vh;
+  display: flex;
+}
+
+.texto {
+  margin-left: 0.7%;
+  padding: 1.4%;
+  width: 50%;
+  min-height: 100%;
+  font-family: "Calibri", sans-serif;
+  font-size: 18px;
+  overflow-y: auto;
+  word-wrap: break-word;
+  overflow-x: visible;
+}
+
+.imagem {
+  display: flex;
+  justify-content: center;
+  margin-right: 0.7%;
+  padding: 1.4%;
+  width: 50%;
+  min-height: 100%;
+}
+
+.imagem-centralizada {
+  margin: 0; /* Centraliza horizontalmente */
+  padding: 0;
+  width: 100%; /* Define largura automática */
+  height: 100%; /* Define altura automática */
+  object-fit: contain; /* Garante que a proporção da imagem seja mantida */
+}
+
+#creditos {
+  margin-top: auto;
+  margin-bottom: 2vh;
+}

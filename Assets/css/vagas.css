@@ -1,0 +1,103 @@
+body {
+  background-size: 100% 100%;
+  background-color: rgb(245, 248, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  background-color: #0c185edc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(2vh + 55px);
+  position: fixed; /* Faz o topo permanecer fixo na tela */
+  overflow: hidden;
+}
+
+#home {
+  display: flex;
+  margin: 2vh;
+  padding: 4px;
+  height: 35px;
+  width: 80px;
+  justify-content: center;
+}
+
+.formulario-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; /* Ativa o scroll vertical */
+  height: 100%;
+  width: 100%;
+}
+
+#mural-icon {
+  flex: 1; /* Faz o mural ocupar todo o espaço restante */
+  margin-top: 10vh; /* Ajusta o espaço para o tamanho de #top */
+  overflow-y: auto; /* Ativa o scroll vertical */
+  padding: 1vh; /* Opcional: espaço interno */
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+}
+
+.formulario {
+  margin-bottom: 8vh;
+  margin-left: 8vh;
+  margin-right: 8vh;
+  width: 60%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  margin-right: auto;
+  margin-left: 10%;
+  padding: 1%;
+}
+
+.inputTitulo {
+  width: 80%;
+  min-height: 5vh;
+  border: 1px solid #198754;
+}
+
+.descricao {
+  margin-right: auto;
+  margin-left: 10%;
+  padding: 1%;
+}
+
+.inputDescricao {
+  width: 80%;
+  min-height: 40vh;
+  resize: vertical;
+  overflow-y: auto;
+  border: 1px solid #198754;
+}
+
+.adcImagem {
+  margin-right: auto;
+  margin-left: 10%;
+  padding: 1%;
+}
+
+#criarAnuncio {
+  margin: 5%;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+}
+
+#creditos {
+  margin-top: auto;
+  margin-bottom: 2vh;
+}

@@ -80,6 +80,45 @@ h2 {
   opacity: 0.8; /* Efeito ao passar o mouse */
 }
 
+/* Links painel superior */
+.__mural {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+}
+
+.__sobre {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+}
+
+.__contato {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+}
+
+.bi-person-circle {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(189, 189, 189);
+  cursor: pointer;
+}
+
+/* Botão criar anúncio (temporário) */
 #criarAnuncio {
   display: flex;
   margin: 2vh;

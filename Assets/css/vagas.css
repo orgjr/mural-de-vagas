@@ -21,13 +21,41 @@ body {
   overflow: hidden;
 }
 
-#home {
+.__mural {
   display: flex;
   margin: 2vh;
-  padding: 4px;
-  height: 35px;
-  width: 80px;
   justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+}
+
+.__sobre {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+}
+
+.__contato {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+}
+
+.bi-person-circle {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(189, 189, 189);
+  cursor: pointer;
 }
 
 .formulario-box {
@@ -52,7 +80,7 @@ body {
   margin-left: 8vh;
   margin-right: 8vh;
   width: 60%;
-  min-height: 70vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,7 +106,7 @@ body {
 
 .inputDescricao {
   width: 80%;
-  min-height: 40vh;
+  min-height: 28vh;
   resize: vertical;
   overflow-y: auto;
   border: 1px solid #198754;
@@ -99,5 +127,6 @@ body {
 
 #creditos {
   margin-top: auto;
-  margin-bottom: 2vh;
+  bottom: 2vh;
+  position: fixed;
 }

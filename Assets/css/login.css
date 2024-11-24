@@ -1,0 +1,81 @@
+body {
+  background-size: 100% 100%;
+  background-color: rgb(245, 248, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  background-color: #0c185edc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(2vh + 55px);
+  position: fixed; /* Faz o topo permanecer fixo na tela */
+  overflow: hidden;
+}
+
+.__mural {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+}
+
+.__sobre {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+}
+
+.__contato {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+}
+
+.bi-person-circle {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(189, 189, 189);
+  cursor: pointer;
+}
+
+#mural-icon {
+  flex: 1; /* Faz o mural ocupar todo o espaço restante */
+  margin-top: 10vh; /* Ajusta o espaço para o tamanho de #top */
+  overflow-y: auto; /* Ativa o scroll vertical */
+  padding: 1vh; /* Opcional: espaço interno */
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+}
+
+.formulario-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* overflow-y: auto; Ativa o scroll vertical */
+  height: 500px;
+  width: auto;
+}
+
+#creditos {
+  margin-top: auto;
+  margin-bottom: 2vh;
+}

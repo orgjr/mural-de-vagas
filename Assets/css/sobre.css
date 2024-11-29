@@ -58,15 +58,6 @@ body {
   cursor: pointer;
 }
 
-.formulario-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: auto; /* Ativa o scroll vertical */
-  height: 100%;
-  width: 100%;
-}
-
 #mural-icon {
   flex: 1; /* Faz o mural ocupar todo o espaço restante */
   margin-top: 10vh; /* Ajusta o espaço para o tamanho de #top */
@@ -75,54 +66,14 @@ body {
   box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
 }
 
-.formulario {
-  margin-bottom: 8vh;
-  margin-left: 8vh;
-  margin-right: 8vh;
-  width: 60%;
-  min-height: 67vh;
+.formulario-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.titulo {
-  margin-right: auto;
-  margin-left: 10%;
-  padding: 1%;
-}
-
-.inputTitulo {
-  width: 80%;
-  min-height: 5vh;
-  border: 1px solid #198754;
-}
-
-.descricao {
-  margin-right: auto;
-  margin-left: 10%;
-  padding: 1%;
-}
-
-.inputDescricao {
-  width: 80%;
-  min-height: 28vh;
-  resize: vertical;
-  overflow-y: auto;
-  border: 1px solid #198754;
-}
-
-.adcImagem {
-  margin-right: auto;
-  margin-left: 10%;
-  padding: 1%;
-}
-
-#criarAnuncio {
-  margin: 5%;
-  width: 150px;
-  height: 40px;
-  font-size: 16px;
+  justify-content: center;
+  /* overflow-y: auto; Ativa o scroll vertical */
+  min-height: 67vh;
+  width: 100%;
 }
 
 #creditos {

@@ -8,9 +8,9 @@
       href="Assets/images/logo/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" type="text/css" href="/Assets/css/vagas.css" />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/sobre.css" />
     <link rel="stylesheet" type="text/css" href="/Assets/misc/reset.css" />
-    <title>Criar Vagas</title>
+    <title>Acessar a conta</title>
 
     <!-- BOOTSTRAP -->
     <link
@@ -32,61 +32,19 @@
       <a class="__contato" href="/contato.html">Contato</a>
       <i class="bi bi-person-circle" alt="profile" onclick="login()"></i>
     </div>
+    <div id="mural-icon">
+      <a href="#">
+        <img
+          class="thumbnails"
+          src="/Assets/images/logo/12.png"
+          alt="MuralDeVagas"
+          onclick="home()"
+        />
+      </a>
+    </div>
+
     <div class="formulario-box">
-      <div id="mural-icon">
-        <a href="#">
-          <img
-            class="thumbnails"
-            src="/Assets/images/logo/12.png"
-            alt="MuralDeVagas"
-            onclick="home()"
-          />
-        </a>
-      </div>
-
-      <form
-        class="formulario"
-        method="post"
-        action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>"
-        enctype="multipart/form-data"
-      >
-        <label class="titulo" for="titulo">Título</label><br />
-        <input
-          type="text"
-          id="titulo"
-          class="inputTitulo"
-          maxlength="40"
-          placeholder="Máximo 40 caracteres"
-        /><br />
-
-        <label class="descricao" for="descricao">Descrição</label><br />
-        <textarea
-          type="text"
-          id="descricao"
-          class="inputDescricao"
-          maxlength="3000"
-          placeholder="Máximo 3000 caracteres"
-        ></textarea
-        ><br />
-
-        <input
-          type="file"
-          id="imagem"
-          name="imagem"
-          accept="image/*"
-          class="adcImagem"
-          label="Imagem"
-        /><br />
-
-        <button
-          id="criarAnuncio"
-          onclick="enviar()"
-          type="button"
-          class="btn btn-success"
-        >
-          Enviar
-        </button>
-      </form>
+      <!-- todo -->
     </div>
 
     <div id="creditos">

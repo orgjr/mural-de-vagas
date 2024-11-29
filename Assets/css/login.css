@@ -68,14 +68,54 @@ body {
 
 .formulario-box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   /* overflow-y: auto; Ativa o scroll vertical */
-  height: 500px;
-  width: auto;
+  min-height: 67vh;
+  width: 100%;
+}
+
+.bem-vindo-box {
+  margin-bottom: 3vh;
+  width: 450px;
+  height: 45px;
+  box-sizing: border-box;
+}
+
+.bem-vindo {
+  margin-right: auto;
+  font-size: 26px;
+  font-family: "Times New Roman", sans-serif;
+}
+
+#__usuario {
+  margin-bottom: 3vh;
+  width: 450px;
+  height: 45px;
+  border-radius: 5px;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 16px;
+  border: 1px solid #0c185edc;
+}
+
+#__senha {
+  margin-bottom: 3vh;
+  width: 450px;
+  height: 45px;
+  border-radius: 5px;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 16px;
+  border: 1px solid #0c185edc;
+}
+
+#__login {
+  width: 450px;
+  height: 45px;
 }
 
 #creditos {
   margin-top: auto;
-  margin-bottom: 2vh;
+  bottom: 2vh;
+  position: fixed;
 }

@@ -5,7 +5,7 @@ body {
 h2 {
   font-size: 200px;
   text-align: center;
-  font-family: "Calibri", sans-serif;
+  font-family: "Times", sans-serif;
 }
 
 #main {
@@ -183,6 +183,14 @@ h2 {
   width: 100%; /* Define largura automática */
   height: 100%; /* Define altura automática */
   object-fit: contain; /* Garante que a proporção da imagem seja mantida */
+}
+
+.bi-arrow-up-circle-fill {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  color: #198754;
+  font-size: 50px;
 }
 
 #creditos {

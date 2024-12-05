@@ -48,6 +48,15 @@ body {
   color: rgb(189, 189, 189);
 }
 
+.__missao {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+}
+
 .bi-person-circle {
   display: flex;
   margin: 2vh;
@@ -74,6 +83,22 @@ body {
   /* overflow-y: auto; Ativa o scroll vertical */
   min-height: 67vh;
   width: 100%;
+}
+
+.contato {
+  margin: 1.4%;
+  padding: 1.4%;
+  height: 50vh;
+  width: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+
+.horario-atendimento {
+  justify-content: center;
+  align-items: center;
 }
 
 #creditos {

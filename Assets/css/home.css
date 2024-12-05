@@ -108,6 +108,15 @@ h2 {
   color: rgb(189, 189, 189);
 }
 
+.__missao {
+  display: flex;
+  margin: 2vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+}
+
 .bi-person-circle {
   display: flex;
   margin: 2vh;

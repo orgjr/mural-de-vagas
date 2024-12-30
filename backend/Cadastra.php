@@ -1,12 +1,14 @@
 <?php
 
+require_once 'Database.php';
 require_once 'Anuncio.php';
 
 class Cadastra extends Anuncio
 {
     public function cadastra()
     {
-        $arquivo = '../fakeAPI/anuncios.json';
+        $db = new Database();
+        $conn = $db->getConnection();
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $titulo = $_POST['titulo'];
@@ -17,7 +19,7 @@ class Cadastra extends Anuncio
             if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK) {
                 $uploadDir = '../uploads/';
                 if (!is_dir($uploadDir)) {
-                    mkdir($uploadDir, 0777, true); // Criar o diretório, se não existir
+                    mkdir($uploadDir, 0777, true);
                 }
                 $nomeImagem = uniqid() . '-' . basename($_FILES['imagem']['name']);
                 $caminhoImagem = $uploadDir . $nomeImagem;
@@ -30,25 +32,17 @@ class Cadastra extends Anuncio
                 }
             }
 
-            $novoAnuncio = [
-                'titulo' => $titulo,
-                'descricao' => $descricao,
-                'imagem' => $imagem ? $imagem : 'Imagem não enviada'
-            ];
-
-            // Ler os anúncios existentes do arquivo
-            $anunciosExistem = file_exists($arquivo);
-            $anuncios = $anunciosExistem ? json_decode(file_get_contents($arquivo), true) : [];
-
-            $anuncios[] = $novoAnuncio;
-
-            // Salvar o array atualizado no arquivo
-            file_put_contents($arquivo, json_encode($anuncios, JSON_PRETTY_PRINT));
+            // Inserir no banco de dados
+            $stmt = $conn->prepare('INSERT INTO ads (titulo, descricao, imagem) VALUES (:titulo, :descricao, :imagem)');
+            $stmt->bindParam(':titulo', $titulo);
+            $stmt->bindParam(':descricao', $descricao);
+            $stmt->bindParam(':imagem', $imagem);
+            $stmt->execute();
 
             echo json_encode(['status' => 'success', 'message' => 'Anúncio cadastrado com sucesso']);
         } else {
             http_response_code(405);
-            echo json_encode(['status' => 'error', 'message' => 'Método não permitido']);
+            echo json_encode(['status' => 'error', 'message' => 'Erro ao criar o anúncio']);
         }
     }
 }

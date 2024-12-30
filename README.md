@@ -1,8 +1,4 @@
-Site criado para publicação de vagas de empregos e cursos. 
-
-
-logo criado no site designevo
-https://www.designevo.com/pt/apps/logo/?name=gray-and-black-tie
+Site criado para publicação de vagas de empregos e cursos.
 
 Créditos:
 

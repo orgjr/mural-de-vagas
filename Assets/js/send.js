@@ -19,7 +19,7 @@ function enviar() {
       console.log(data);
       alert(data.message); // Exibir mensagem do servidor
       // Redirecionar para a página inicial após enviar
-      window.location.href = "/index.html";
+      window.location.href = "/vagas.html";
     })
     .catch((error) => {
       console.error("Erro ao enviar dados:", error);

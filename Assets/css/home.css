@@ -45,16 +45,31 @@ h2 {
   box-sizing: border-box;
   height: 35px;
   width: 400px;
+  outline: none;
 }
 
 .input-container {
   position: relative;
   width: 100%;
+  outline: none;
 }
 
 #termoPesquisa {
-  border: 1px solid #198754;
+  border: none;
   font-size: 16px;
+  height: 35px;
+  width: 400px;
+  border: 1px solid #071c61;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  padding: 10px;
+}
+#termoPesquisa:hover {
+  outline: 2px solid #071c61;
+}
+#termoPesquisa:focus {
+  outline: 2px solid #071c61;
 }
 
 /* BOTAO DO ÍCONE */
@@ -67,8 +82,8 @@ h2 {
 
 .icon-button {
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: 2%;
+  top: 43%;
   transform: translateY(-50%);
   background: none;
   border: none;

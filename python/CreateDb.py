@@ -1,6 +1,12 @@
 import sqlite3
+import os
 
-conn = sqlite3.connect('./bd/muraldevagas.db')
+
+# Adiciona o caminho relativo do script
+base_dir = os.path.dirname(__file__) # Armazena o diretório do script atual
+db_path = os.path.join(base_dir, './db/database.db') # Caminho relativo do banco de dados
+
+conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
 
 # Criar a tabela "users" se não existir

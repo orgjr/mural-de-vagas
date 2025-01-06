@@ -8,6 +8,7 @@ class Cadastra extends Anuncio
     public function cadastra()
     {
         $db = new Database();
+        $conn = $db->setRunDb();
         $conn = $db->getConnection();
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {

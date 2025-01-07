@@ -1,5 +1,5 @@
-Site criado para publicação de vagas de empregos e cursos.
+Web Project created for the Computer Human Interaction discipline of Fatec Osasco Multiplatform Higher Technology Course
 
-Créditos:
+Credits:
 
-<div>Logótipo feito com <a href="https://www.designevo.com/pt/" title="Criador de Logótipos Online Grátis">DesignEvo</a></div>
+<div>Logo made with <a href="https://www.designevo.com/pt/" title="Criador de Logótipos Online Grátis">DesignEvo</a></div>

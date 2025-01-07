@@ -1,4 +1,4 @@
-Web Project created for the Computer Human Interaction discipline of Fatec Osasco Multiplatform Higher Technology Course
+Web Project created to the Computer Human Interaction discipline of the technological higher education course of Multiplatform Software Development at Fatec Osasco.
 
 Credits:
 

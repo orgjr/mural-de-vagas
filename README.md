@@ -1,4 +1,4 @@
-Web Project created to the Computer Human Interaction discipline of the technological higher education course of Multiplatform Software Development at Fatec Osasco.
+Web project created to the course Computer Human Interaction. The credits are part of the requirements for the higher education degree Multiplatform Software Development at Fatec Osasco.
 
 Credits:
 
